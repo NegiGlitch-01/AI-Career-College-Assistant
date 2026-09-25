@@ -27,12 +27,6 @@ client = (
     else None
 )
 
-
-# Gemini model fallback chain.
-# If one model is temporarily unavailable, the app automatically
-# tries the next available Gemini model instead of stopping.
-# FAST MODE: use the low-latency model first.
-# Only fall back if the first model actually fails.
 GEMINI_MODELS = [
     "gemini-3.5-flash-lite",
     "gemini-3.8-flash",
